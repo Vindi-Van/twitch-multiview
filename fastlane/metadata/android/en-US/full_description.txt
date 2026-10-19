@@ -1,0 +1,12 @@
+Multiview puts up to four live Twitch streams on your TV at the same time, and lets you choose which one you hear with the remote.
+
+<b>Features</b>
+<ul>
+<li>Up to four streams: one fills the screen, two sit side by side, three share a 2×2 grid, and four open in focus (the one you hear is big) or as four equal squares.</li>
+<li>Pick streams from the channels you follow that are live, from search, or from the top live streams.</li>
+<li>Sign in with a code on your phone; nothing to type on the TV.</li>
+<li>Show the chat of any stream, in free space next to the video.</li>
+<li>Optional sign-in to Twitch's player, so Turbo and your subscriptions apply.</li>
+</ul>
+
+Multiview uses Twitch's official embedded player. It is an unofficial app, not affiliated with or endorsed by Twitch Interactive, Inc.

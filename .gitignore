@@ -1,0 +1,21 @@
+# Gradle and Android
+.gradle/
+.kotlin/
+build/
+local.properties
+captures/
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+
+# Signing material never goes in git (CI decodes it from secrets)
+*.jks
+*.keystore
+keystore.properties
+
+# Page tooling
+node_modules/
+
+.DS_Store

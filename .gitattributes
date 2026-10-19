@@ -1,0 +1,13 @@
+* text=auto eol=lf
+*.bat text eol=crlf
+gradlew text eol=lf
+
+*.png binary
+*.jpg binary
+*.gif binary
+*.jar binary
+*.jks binary
+*.apk binary
+
+# The bundled QR library isn't ours; keep it out of language stats.
+app/src/main/assets/vendor/** linguist-vendored

@@ -1,0 +1,18 @@
+{
+  "name": "twitch-multiview-page",
+  "private": true,
+  "description": "Tests and lint for the TV page in app/src/main/assets (the Android app itself builds with Gradle).",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test \"app/src/test/js/*.test.js\"",
+    "lint": "eslint app/src/main/assets/js app/src/test/js"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.13.0",
+    "globals": "^17.13.0"
+  }
+}

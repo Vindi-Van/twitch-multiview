@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Every other warning fails the build (see lint {} in build.gradle.kts). Each exception says why. -->
+<lint>
+    <!-- Both WebViewClients do implement onRenderProcessGone; this androidx.webkit check misses overrides in Kotlin anonymous objects. -->
+    <issue id="MissingOnRenderProcessGone" severity="ignore" />
+    <!-- android:allowBackup="false" already turns backups off below Android 12. -->
+    <issue id="DataExtractionRules" severity="ignore" />
+    <!-- Dependency, Gradle and SDK versions are kept current by Dependabot pull requests, not by lint. -->
+    <issue id="GradleDependency" severity="ignore" />
+    <issue id="AndroidGradlePluginVersion" severity="ignore" />
+    <issue id="NewerVersionAvailable" severity="ignore" />
+    <issue id="OldTargetApi" severity="ignore" />
+    <!-- TV launchers use the banner; the icon is a single full-bleed xhdpi image on purpose. -->
+    <issue id="IconLauncherShape" severity="ignore" />
+    <issue id="IconMissingDensityFolder" severity="ignore" />
+</lint>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1920">
+<title>Multiview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/app.css">
+<script src="vendor/qrcode.js" defer></script>
+<script type="module" src="js/main.js"></script>
+</head>
+<body>
+
+<!-- Watching: tiles are positioned absolutely, so changing the layout never moves (and reloads) an iframe. -->
+<div id="watch" class="screen" hidden>
+  <div id="stage"></div>
+  <section id="info" class="panel" hidden></section>
+  <section id="chat" class="panel" hidden>
+    <header><span class="chat-icon" data-icon="chat"></span><span class="chat-name"></span><span class="chat-hint">Hold OK on the stream to hide</span></header>
+    <div class="chat-frame"></div>
+  </section>
+</div>
+
+<!-- Picking: Following, Search, Top live and Account, with the lineup tray along the bottom. -->
+<div id="picker" class="screen" hidden>
+  <nav id="rail" aria-label="Sections">
+    <div class="brand">Multiview</div>
+    <button class="rail-item focusable" data-key="rail:following" data-action="tab" data-tab="following"><span class="icon" data-icon="heart"></span>Following</button>
+    <button class="rail-item focusable" data-key="rail:search" data-action="tab" data-tab="search"><span class="icon" data-icon="search"></span>Search</button>
+    <button class="rail-item focusable" data-key="rail:top" data-action="tab" data-tab="top"><span class="icon" data-icon="grid"></span>Top live</button>
+    <div class="rail-fill"></div>
+    <button class="rail-item account focusable" data-key="rail:account" data-action="tab" data-tab="account">
+      <span class="avatar" id="rail-avatar"></span>
+      <span class="account-lines"><span id="rail-login"></span><span id="rail-status"></span></span>
+    </button>
+  </nav>
+  <main id="content">
+    <div id="banner" hidden></div>
+    <header id="content-head"><h1 id="content-title"></h1><span id="content-sub"></span></header>
+    <div id="content-top"></div>
+    <div id="cards"></div>
+  </main>
+  <section id="tray" aria-label="Your lineup"></section>
+</div>
+
+<!-- Signing in: step 1 shows a code for twitch.tv/activate; step 2 offers Twitch's own sign-in page for the players. -->
+<div id="signin" class="screen" hidden></div>
+
+<div id="message" hidden></div>
+<div id="toast" hidden></div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+name: Bug report
+description: Something doesn't work the way it should.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Problems with Twitch itself (a channel that won't load anywhere, ads, account issues) are for Twitch Support.
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead.
+      placeholder: |
+        1. Opened Multiview with four streams in the lineup
+        2. Held OK on the top-right stream and chose "Show chat"
+        3. Expected chat under the big stream; instead...
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Multiview version
+      description: From the release you installed, e.g. v0.2.0.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: device
+    attributes:
+      label: Device
+      options:
+        - NVIDIA Shield TV
+        - Chromecast with Google TV / Google TV Streamer
+        - Amazon Fire TV
+        - Other Android TV
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: Android TV OS version
+      placeholder: Android 11
+    validations:
+      required: true
+
+  - type: input
+    id: webview
+    attributes:
+      label: Android System WebView version
+      description: Settings → Apps → See all apps → Show system apps → Android System WebView. The players run in the WebView, so this matters.
+      placeholder: "155.0.8059.44"
+    validations:
+      required: true
+
+  - type: input
+    id: streams
+    attributes:
+      label: How many streams, and which layout?
+      placeholder: 4 streams, focus layout, chat on
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs (optional)
+      description: "Output of `adb logcat -d -s Multiview:*` right after the problem."
+      render: shell
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues for this problem.
+          required: true
+        - label: I'm on the latest release.
+          required: true

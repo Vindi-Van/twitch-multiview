@@ -1,0 +1,1 @@
+First public release: up to four Twitch streams with focus and grid layouts, sign-in with a code, Following, Search and Top live, per-stream chat, and Twitch player sign-in.
