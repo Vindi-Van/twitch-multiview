@@ -99,7 +99,7 @@ You can skip both and add channels by name in Search.
 
 - **Four streams at most.** The layouts are built for four, every player has to stay at least 400×300 (Twitch's minimum), and four is already a lot of video for a TV box to decode.
 - **Ads play as usual,** unless you've signed in to the video player and have Turbo or subscribe to the channel.
-- **Only Twitch.** Copy-protected services such as Peacock or Paramount+ won't play inside a WebView, which only gets software-level DRM.
+- **Only Twitch, for now.** YouTube is planned; see the [roadmap](docs/ROADMAP.md). Copy-protected services such as Peacock or Paramount+ won't play inside a WebView, which only gets software-level DRM.
 - **Chat is read-only on the TV.**
 
 ## Build from source
@@ -132,7 +132,7 @@ One fullscreen WebView shows a page bundled in the app, and that page holds up t
 
 ## Contributing
 
-Issues and pull requests are welcome; see [CONTRIBUTING.md](CONTRIBUTING.md) and the [Code of Conduct](CODE_OF_CONDUCT.md). Please report security problems privately ([SECURITY.md](SECURITY.md)). What the app stores and who it talks to is in [PRIVACY.md](PRIVACY.md).
+Issues and pull requests are welcome; see [CONTRIBUTING.md](CONTRIBUTING.md) and the [Code of Conduct](CODE_OF_CONDUCT.md). What's planned next is in the [roadmap](docs/ROADMAP.md). Please report security problems privately ([SECURITY.md](SECURITY.md)). What the app stores and who it talks to is in [PRIVACY.md](PRIVACY.md).
 
 ## License
 
